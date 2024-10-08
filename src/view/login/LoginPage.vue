@@ -2,7 +2,7 @@
   <div class="h-[100%] flex">
     <div class="h-[100%] w-[40vw]">
       <img
-        src="../assets/images/appm3V1L6Y3C3podIGShCo686dXRRY4i.png"
+        src="../../assets/images/appm3V1L6Y3C3podIGShCo686dXRRY4i.png"
         alt=""
         class="h-[100vh]"
       />
