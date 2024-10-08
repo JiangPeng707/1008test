@@ -21,5 +21,7 @@ const activeName = ref("first");
 .el-tabs__item {
   margin: 0 1.5vw;
   width: 4.4vw;
+  height: 4.5vw;
+  line-height: 4.5vw;
 }
 </style>
