@@ -1,10 +1,5 @@
 <template>
-  <div class="w-[87.5vw]">
-    <div
-      class="h-[4vw] leading-[4vw] pl-[2vw] border-b-[2px] text-[18px] font-bold"
-    >
-      代码仓库
-    </div>
+  <div>
     <div class="relative">
       <el-tabs v-model="activeName" class="demo-tabs">
         <el-tab-pane label="最近访问" name="first">
