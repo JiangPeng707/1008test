@@ -1,6 +1,9 @@
 <template>
-  <RouterView></RouterView>
+  <App>
+    <RouterView></RouterView>
+  </App>
 </template>
-<script>
+<script setup>
 import { RouterView } from "vue-router";
+import { App } from "ant-design-vue";
 </script>

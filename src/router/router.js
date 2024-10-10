@@ -5,9 +5,9 @@ import CodePage from "../view/layout/children/CodePage.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", component: LoginPage },
+    { path: "/login", component: LoginPage },
     {
-      path: "/layout",
+      path: "/",
       component: LayoutPage,
       children: [{ path: "code", component: CodePage }],
     },
