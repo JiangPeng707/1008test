@@ -10,6 +10,7 @@ import AutoPage from "@/view/layout/children/AutoPage.vue";
 import MakePage from "@/view/layout/children/MakePage.vue";
 import KnowledgePage from "@/view/layout/children/KonwledgePage.vue";
 import ThingPage from "@/view/layout/children/ThingPage.vue";
+import CreateRepositories from "@/view/layout/children/CreateRepositories.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -27,6 +28,7 @@ const router = createRouter({
         { path: "watch", component: WatchPage },
         { path: "make", component: MakePage },
         { path: "thing", component: ThingPage },
+        { path: "createRps", component: CreateRepositories },
       ],
     },
   ],

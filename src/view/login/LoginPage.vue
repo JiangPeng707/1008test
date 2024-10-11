@@ -93,7 +93,7 @@ const loginHandle = async () => {
   console.log(res);
   if (!err) {
     notification.success({ message: "恭喜你登陆成功" });
-    router.push("/");
+    router.push("/work");
   }
 };
 </script>

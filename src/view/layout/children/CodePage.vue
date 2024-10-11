@@ -63,20 +63,28 @@
           </div>
         </el-tab-pane>
       </el-tabs>
-      <el-button color="black" class="absolute top-1 right-10"
+      <el-button
+        color="black"
+        class="absolute top-4 right-10 !h-[2.2vw] w-[7.6vw] !text-[16px]"
+        @click="createRps"
         >创建代码仓库</el-button
       >
     </div>
   </div>
 </template>
-<script lang="ts" setup>
+<script setup>
 import { ref } from "vue";
-
+import { useRouter } from "vue-router";
+const router = useRouter();
+function createRps() {
+  router.push("/createRps");
+}
 const activeName = ref("first");
 </script>
 <style>
 .el-tabs__item {
-  margin: 0 1vw;
-  width: 4vw;
+  height: 4vw !important;
+  font-size: 16px !important;
+  margin-left: 1vw;
 }
 </style>

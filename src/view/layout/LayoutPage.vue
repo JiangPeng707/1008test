@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-[100vh]">
     <el-menu
-      default-active="/layout/code"
+      default-active="/work"
       router
       background-color="#f8f9fc"
       class="w-[6vw]"
@@ -9,35 +9,35 @@
       @select="handleOpen"
     >
       <el-menu-item index="/work">
-        <el-icon><icon-menu /></el-icon>
+        <el-icon><Monitor /></el-icon>
         <div class="">工作台</div>
       </el-menu-item>
       <el-menu-item index="/project">
-        <el-icon><icon-menu /></el-icon>
+        <el-icon><Folder /></el-icon>
         <div>项目</div>
       </el-menu-item>
       <el-menu-item index="/ai">
-        <el-icon><document /></el-icon>
+        <el-icon><ElementPlus /></el-icon>
         <div>AI</div>
       </el-menu-item>
       <el-menu-item index="/thing">
-        <el-icon><setting /></el-icon>
+        <el-icon><Document /></el-icon>
         <div>事项</div>
       </el-menu-item>
       <el-menu-item index="/code">
-        <el-icon><setting /></el-icon>
+        <el-icon><Help /></el-icon>
         <div>代码</div>
       </el-menu-item>
       <el-menu-item index="/make">
-        <el-icon><setting /></el-icon>
+        <el-icon><Cpu /></el-icon>
         <div>制品</div>
       </el-menu-item>
       <el-menu-item index="/watch">
-        <el-icon><setting /></el-icon>
+        <el-icon><View /></el-icon>
         <div>洞察</div>
       </el-menu-item>
       <el-menu-item index="/knowledge">
-        <el-icon><setting /></el-icon>
+        <el-icon><Coin /></el-icon>
         <div>知识</div>
       </el-menu-item>
       <el-menu-item index="/auto">
@@ -47,7 +47,7 @@
     </el-menu>
     <div class="w-[94vw]">
       <div
-        class="h-[4vw] leading-[4vw] pl-[2vw] border-b-[2px] text-[18px] font-bold"
+        class="h-[4vw] leading-[4vw] pl-[2vw] border-b-[2px] text-[20px] font-bold"
       >
         {{ content }}
       </div>
@@ -57,7 +57,6 @@
 </template>
 
 <script setup>
-import { Document, Menu as IconMenu, Setting } from "@element-plus/icons-vue";
 import { RouterView } from "vue-router";
 import { ref } from "vue";
 const content = ref();
