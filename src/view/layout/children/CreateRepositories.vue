@@ -2,6 +2,7 @@
   <div class="m-[2vw]">
     <div class="flex items-center mb-[2vw]">
       <div
+        @click="backToCode"
         class="size-[2vw] rounded-[50%] shadow-[0_0_10px_3px_rgba(200,200,200,0.4)] flex items-center justify-center hover:shadow-[0_0_10px_2px_rgba(200,200,200,0.8)] cursor-pointer transition-all"
       >
         <Icon
@@ -41,15 +42,15 @@
           maxlength="100"
           show-word-limit
         >
-          <template #prepend
-            ><Icon
+          <template #prepend>
+            <Icon
               icon="devicon:git"
               width="20"
               height="20"
               class="mr-[0.5vw]"
             />
-            <div class="text-[black] text-[16px]">GIT仓库</div></template
-          >
+            <div class="text-[black] text-[16px]">GIT仓库</div>
+          </template>
         </el-input>
       </div>
     </div>
@@ -100,13 +101,15 @@
     </div>
     <div>
       <el-button color="black" size="large">完成创建</el-button
-      ><el-button size="large">取消</el-button>
+      ><el-button size="large" @click="backToCode">取消</el-button>
     </div>
   </div>
 </template>
 <script setup>
 import { Icon } from "@iconify/vue";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
 const radio = ref(1);
 const input1 = ref("");
 const textarea = ref("");
@@ -128,6 +131,9 @@ const options = [
     label: "Component",
   },
 ];
+function backToCode() {
+  router.push("/code");
+}
 </script>
 <style>
 .el-input-group__prepend {
